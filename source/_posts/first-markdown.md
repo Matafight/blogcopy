@@ -10,4 +10,5 @@ tags:
   ERROR:deploy not found git 
   ```
   google 了一下，找到了官方的教程 http://hexo.io/docs/deployment.html 原来是因为没有 安装 hexo-deployer-git,ok安装完就可以了。
-	![](http://ww2.sinaimg.cn/large/5e8cb366jw1e62o63tkv3j20dh078q5a.jpg)
+  
+配置多说评论 http://dev.duoshuo.com/threads/541d3b2b40b5abcd2e4df0e9

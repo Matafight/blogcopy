@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 一只菜鸟的博客
-subtitle: 每天都要成长
+title: keep fighting
+subtitle: 不以物喜，不以己悲
 description: this is amazing 
 author: John Doe
 language: zh-CN
@@ -64,11 +64,11 @@ pagination_dir: page
 ## Themes: http://hexo.io/themes/
 theme: landscape
 
-
+duoshuo_shortname: matafight1994
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/Matafight/Matafight.github.io.git
+  repository: git@github.com:Matafight/Matafight.github.io.git
   branch: master

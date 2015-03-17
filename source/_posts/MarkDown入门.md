@@ -1,6 +1,6 @@
 title: "MarkDown入门"
 date: 2015-03-07 10:15:05
-categories: Markdown
+categories: 工具
 tags:
 ---
 # 发现一个超级好用的MarkDown编辑器 #
