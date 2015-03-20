@@ -4,9 +4,9 @@
 
 # Site
 title: keep fighting
-subtitle: 不以物喜，不以己悲
+subtitle: 每天进步一点点
 description: this is amazing 
-author: John Doe
+author: Shaocheng Guo
 language: zh-CN
 timezone:
 
@@ -62,7 +62,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: landscape
+theme: next
+
 
 duoshuo_shortname: matafight1994
 

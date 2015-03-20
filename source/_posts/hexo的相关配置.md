@@ -1,4 +1,4 @@
-title: "hexo中latex公式的输入"
+title: "hexo的相关配置"
 date: 2015-03-06 20:42:21
 categories: 工具
 tags:
@@ -8,4 +8,6 @@ tags:
 Simple inline $a = b + c$.
 $e^{\pi i}+1=?$
 
-![image](/img/mae.PNG)
+[hexo搭建教程](http://zipperary.com/2013/05/28/hexo-guide-2/)
+[配置多说评论1](http://www.leejianyang.com/2014/05/25/duoshuo_tutorial/)
+[配置多说评论2](http://dev.duoshuo.com/threads/541d3b2b40b5abcd2e4df0e9)
