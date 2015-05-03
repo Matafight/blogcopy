@@ -48,3 +48,41 @@ tags: 工具
 					ctrl+n or ctrl+p
 
 7. windows下Gvim配置python开发环境 [超详细](http://www.furion.info/24.html)
+
+8. windows 下配置ctags+taglist
+         
+   先去下载[taglists](http://www.vim.org/scripts/script.php?script_id=273)，解压文件得到doc和plugin两个目录，两个目录下的文件分别是taglist的提示文件和taglist的插件，将doc下的taglist.txt复制到vim安装目录下的doc文件夹中，将plugin目录下的taglist.vim 复制到plugin文件夹。
+
+   之后下载[ctags](http://ctags.sourceforge.net/)，解压，将其中的ctags.exe 直接复制到gvim安装目录下（与vim.exe在同一个目录）
+   之后在_vimrc 配置文件中加入如下两句：
+	set tags=tags：
+	set autochdir
+   这个命令让vim首先在当前目录寻找tags 文件，如果没有找到，使用第二条命令自动递归父目录继续寻找。
+	
+   配置完毕，在gvim中输入 :TlistToggle 切换taglist窗口
+
+   切换到代码所在文件夹，在cmd 中输入 ctags -R （要配置gvim安装目录的环境变量）生成tags文件
+
+9. gvim 下字符的查找替换:
+
+   语法为 :[addr]s/源字符串/目的字符串/[option]
+   全局替换命令为：:%s/源字符串/目的字符串/g
+   [addr] 表示检索范围，省略时表示当前行。
+   如：“1，20” ：表示从第1行到20行；
+   “%” ：表示整个文件，同“1,$”；
+   “. ,$” ：从当前行到文件尾；
+   s : 表示替换操作
+   [option] : 表示操作类型
+   如：g 表示全局替换; 
+   c 表示进行确认
+   p 表示替代结果逐行显示（Ctrl + L恢复屏幕）；
+   省略option时仅对每行第一个匹配串进行替换；
+   如果在源字符串和目的字符串中出现特殊字符，需要用**”\”**转义
+
+   e.g.  
+```bash
+:%s/perm/pm/g  
+表示将perm替换为pm，但是这个命令会将含有perm作为子串的字符串中的perm替换为pm，如果要全字符匹配，命令为
+:%s/\<perm\>/pm/g
+```
+**参考**：[http://wdicc.com/search-in-vim/](http://wdicc.com/search-in-vim/)
