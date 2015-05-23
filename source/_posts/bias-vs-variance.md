@@ -15,3 +15,7 @@ expected loss = (bias)^2 + variance + noise
 bias 指 预测的**均值**与真实值之间的差，variance 是指预测的值的波动情况，模型越复杂，bias会越小，但是variance 会变大。相反地，模型简单，bias 会大，variance 会小，所以要选择bias-variance balanced的模型。
 
 对于最小二乘来说，正则项越大，模型就越简单，正则项越小，控制over-fitting的能力就弱，模型就复杂。
+
+[http://mlnotes.com/2013/08/20/bv.html](http://mlnotes.com/2013/08/20/bv.html)
+
+[http://scott.fortmann-roe.com/docs/BiasVariance.html](http://scott.fortmann-roe.com/docs/BiasVariance.html)

@@ -86,3 +86,20 @@ tags: 工具
 :%s/\<perm\>/pm/g
 ```
 **参考**：[http://wdicc.com/search-in-vim/](http://wdicc.com/search-in-vim/)
+
+10. 5/8，今天准备安装vundle，vim的一个插件管理器，按照官网的操作[https://github.com/gmarik/Vundle.vim/wiki/Vundle-for-Windows](https://github.com/gmarik/Vundle.vim/wiki/Vundle-for-Windows)出现了跟这个上面[https://github.com/gmarik/Vundle.vim/issues/525](https://github.com/gmarik/Vundle.vim/issues/525)一样的问题，最终按照这个方法解决了，我只想说:windows真TM没人权，安装个什么东西都是各种问题
+5/9 update ,昨天还是可以的，今天又不行了，echo expand('~')给我输出的路径是“C:\windows\system32\config\systemprofile”，我只想说，这是什么鬼，昨天还是"C:\Users\guo"呢，今天就变了，不过我将路径换成	
+```bash
+set rtp+=$vim/vimfiles/bundle/Vundle.vim
+let path='$vim/vimfiles/bundle'
+```
+这样终于可以了，:echo $vim 输出的路径正是vim的安装路径了，==！。还是要说一句，windows实在是太不适合开发了，搭个环境都要死人了==！
+```bash
+PluginUpdate
+PluginClean 清理插件
+PluginList 列出所有插件
+PluginSearch XXX 搜索插件,-> 选中插件 按 i 安装 ->在 vimrc文件中添加Plugin XXX 声明
+```
+在vimrc中配置 Plugin 时，只需要写 Plugin 'user/repo'就行了（对应着github的username和插件的repo），如果没有加/ 则vundle 默认从	vim script: https://github.com/vim-scripts/ 去取 
+[http://xugming.iteye.com/blog/333194](http://xugming.iteye.com/blog/333194)上面有详细的关于路径的介绍
+[http://foocoder.com/blog/mei-ri-vimcha-jian-kai-pian-zhi-vundle.html/](http://foocoder.com/blog/mei-ri-vimcha-jian-kai-pian-zhi-vundle.html/)

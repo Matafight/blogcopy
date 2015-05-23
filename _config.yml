@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: keep fighting
-subtitle: 每天进步一点点
+title: My world
+subtitle: make a difference
 description: this is amazing 
-author: Shaocheng Guo
+author: guo_sc
 language: zh-CN
 timezone:
 
@@ -62,7 +62,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: next
+theme: yilia
 
 
 duoshuo_shortname: matafight1994
