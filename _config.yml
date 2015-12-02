@@ -12,7 +12,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+#关系到sitemap
+url: http://gsclife.info  
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -62,7 +63,12 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: yilia
+  
+sitemap:
+     path: sitemap.xml
+
+theme: minos
+
 
 
 duoshuo_shortname: matafight1994
@@ -73,3 +79,5 @@ deploy:
   type: git
   repository: git@github.com:Matafight/Matafight.github.io.git
   branch: master
+  
+
