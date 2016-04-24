@@ -67,7 +67,7 @@ pagination_dir: page
 sitemap:
      path: sitemap.xml
 
-theme: landscape
+theme: minos
 
 
 
