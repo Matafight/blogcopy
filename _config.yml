@@ -65,7 +65,7 @@ pagination_dir: page
 ## Themes: http://hexo.io/themes/
   
 #sitemap:
-   #  path: sitemap.xml
+#  path: sitemap.xml
 
 theme: landscape
 
