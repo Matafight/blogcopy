@@ -13,7 +13,7 @@ timezone:
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 #关系到sitemap
-url: http://gsclife.info  
+#url: http://gsclife.info  
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -64,8 +64,8 @@ pagination_dir: page
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
   
-sitemap:
-     path: sitemap.xml
+#sitemap:
+   #  path: sitemap.xml
 
 theme: landscape
 
