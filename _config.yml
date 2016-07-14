@@ -72,7 +72,7 @@ theme: landscape
 backup:
     type: git
     theme: landscape
-    repository: git@github.com:Matafight/backupblog.git
+    repository: git@github.com:Matafight/backupblog.git:master
 
 
 duoshuo_shortname: matafight1994
