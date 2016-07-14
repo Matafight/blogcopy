@@ -69,6 +69,11 @@ pagination_dir: page
 
 theme: landscape
 
+backup:
+    type: git
+    theme: landscape
+    repository:
+       github: git@github.com:Matafight/blogcopy.git
 
 
 duoshuo_shortname: matafight1994
