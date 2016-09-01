@@ -24,3 +24,5 @@ tags: FAQ
 图中最后一项是pid 进程号，再在任务管理器中查找了一下发现是
 ![](http://i.imgur.com/qIXTsT0.png)
 福昕阅读器占用的端口。既然如此我就只能修改hexo本地服务器的端口了，方法是在node_modules/hexo-server/index.js 中修改4000的端口，我改成了4001，保存退出，重新执行 hexo s -g。页面加载成功！
+
+或者 使用 hexo s -p 4001 指定端口号

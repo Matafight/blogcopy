@@ -1,0 +1,84 @@
+title: 使用pandas读取和处理数据
+date: 2016-08-04 10:36:47
+categories: machine learning
+tags: pandas
+---
+**1.介绍**
+=========
+pandas 是python 中一个常用的开源的进行数据处理的package，它有很多功能，但是我常用的就是使用pandas 来读取和处理数据.
+```bash
+import pandas as pd
+```
+pandas中数据存储的基本单位是data_frame，不同于numpy 中的array，dataframe 有很多种对数据操作的method。
+
+读入数据:
+```bash
+df = pd.read_csv(filename,sep=' ',header=None)
+```
+read_csv方法有很多参数,参见：http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html
+常用参数：
+
+file_path:文件路径和名字
+sep : 一行的数据之间使用什么符号分割的,一般是空格，csv文件是逗号
+header: 用来当列名的行号，如果没有传入names参数，则header = 0 ,如果传入了names，则为None
+names:列名，默认为None
+如果传入header =None ，则列名为[0,1,..]这样的整数。
+如果仅仅传入上述参数，行的索引也为从0开始的整数。
+
+**2.data_frame 选择数据(切片)**
+======================
+a)选择行
+
+http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-label
+```bash
+df.loc[row_indexer,column_indexer]
+```
+
+>Indexing and Selecting Data:
+Object selection has had a number of user-requested additions in order to support more explicit location based indexing. pandas now supports three types of multi-axis indexing.
+>.loc is primarily label based, but may also be used with a boolean array. .loc will raise KeyError when the items are not found. Allowed inputs are:
+
+>A single label, e.g. 5 or 'a', (note that 5 is interpreted as a label of the index. This use is not an integer position along the index)
+
+单个标签选择某一行，如:
+```bash
+df.loc['a']
+```
+
+>A list or array of labels ['a', 'b', 'c']
+
+输入一个list，选择多行,如:
+```bash
+#a,b,c分别是行标签
+lis = ['a','b','c']
+df.loc[lis]
+```
+
+>A slice object with labels 'a':'f', (note that contrary to usual python slices, both the start and the stop are included!)
+
+使用切片选择多行,如:
+
+```bash
+df.loc['a':'c']
+df.loc['a':]
+```
+
+>A boolean array
+
+使用一个boolean 数组选择多行，如：
+```bash
+df.loc['a']>0
+#表示返回 ‘a’行的各个值是否大于0,大于0为True，小于0为False，返回数组大小为列的个数。
+df.loc[:,df.loc['a']>0]
+#先取a行中数值大于0的列，然后对于整个dataframe,返回对应这些列的所有行。
+```
+
+也可以利用df.iloc 来选择行，df.iloc[2]表示直接选择第二行，而不用知道第二行的标签。
+
+b)选择列
+
+选择列可以参考上述选择行的方法，也可以利用df.loc方法和df.iloc方法
+如果知道列名:
+```bash
+df.['a']
+df.alias
