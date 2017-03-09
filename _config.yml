@@ -71,7 +71,7 @@ theme: maupassant
 
 backup:
     type: git
-    theme: landscape
+    theme: maupassant
     repository: git@github.com:Matafight/backupblog.git,master
 
 
