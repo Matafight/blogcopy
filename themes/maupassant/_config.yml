@@ -36,12 +36,12 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
   - links
 
 links:
-  - title: site-name1
-    url: http://www.example1.com/
-  - title: site-name2
-    url: http://www.example2.com/
-  - title: site-name3
-    url: http://www.example3.com/
+  - title: tsien
+    url: https://tsien.github.io/
+  - title: 阮一峰的网络日志
+    url: http://www.ruanyifeng.com/blog/
+  - title: Rachel Zhang的专栏
+    url: http://blog.csdn.net/abcjennifer/article/category/1226975
 
 timeline:
   - num: 1
