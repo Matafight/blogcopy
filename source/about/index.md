@@ -6,9 +6,9 @@ date: 2015-03-19 17:37:40
 
 短期计划:
 - 重新看一遍《明朝那些事儿》
-- 找工作
-    + 刷题 ->leetcode & 《剑指offer》
-    + 刷基础 ->《统计学习方法》 & 《机器学习》（周志华）
+- ~~找工作~~
+    + ~~刷题 ->leetcode & 《剑指offer》~~
+    + ~~刷基础 ->《统计学习方法》 & 《机器学习》（周志华）~~
 
 中期计划:
 - 搞deep learning(https://github.com/ChristosChristofidis/awesome-deep-learning)
